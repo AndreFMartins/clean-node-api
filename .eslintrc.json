@@ -1,6 +1,7 @@
 {
     "extends": "standard-with-typescript",
     "parserOptions": {
+        "tsconfigRootDir": "C:/Documentos/clea-node-api",
         "project": "./tsconfig.json"
     }
 }

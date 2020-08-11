@@ -1,12 +1,24 @@
 {
     "extends": "standard-with-typescript",
     "parserOptions": {
-        "tsconfigRootDir": "C:/Documentos/clea-node-api",
+        "tsconfigRootDir": "/home/andre/Documentos/clean-node-api",
         "project": "./tsconfig.json"
     },
     "rules": {
         "@typescript-eslint/return-await": "off",
         //a proxima linha resolve o bug da biblioteca que não pode ser usada com a versão superior a 11.0.1(eslint-config-standard-with-typescript)
-        "@typescript-eslint/comma-spacing": "off"
-    }
+        "@typescript-eslint/comma-spacing": "off",
+        "@typescript-eslint/no-undef": "off"
+    },
+    "overrides": [
+        {
+            "files": [
+                "**/*.spec.js",
+                "**/*.spec.jsx"
+            ],
+            "env": {
+                "jest": true
+            }
+        }
+    ]
 }

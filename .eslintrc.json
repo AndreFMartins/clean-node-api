@@ -8,6 +8,7 @@
         "@typescript-eslint/return-await": "off",
         //a proxima linha resolve o bug da biblioteca que não pode ser usada com a versão superior a 11.0.1(eslint-config-standard-with-typescript)
         "@typescript-eslint/comma-spacing": "off",
+        "@typescript-eslint/strict-boolean-expressions": "off",
         "@typescript-eslint/no-undef": "off"
     },
     "overrides": [
